@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimientos</title>
+    <link rel="stylesheet" href="/static/css/pico.css">
+    <link rel="stylesheet" href="/static/css/styles.css">
+    <script src="/static/js/app.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            App Gestion de Movimientos
+        </div>
+    </header>
+    
+    <section class="container">
+        <h2>Movimientos</h2>
+        <nav>
+            <ul>
+              <li><button role="button" id="btn_crear">Nuevo</button></li>
+            </ul>
+          </nav>
+        
+        <div id="movements_list">
+            <table id="movements_table">
+                <tr>
+                    <th>Fecha</th>
+                    <th>Concepto</th>
+                    <th>Cantidad</th>
+                </tr>
+                
+            </table>
+        </div>
+
+        <article id="movements_detail" class="inactive">
+            <form id="movement_form">
+                <input type="date" name="date" id="date">
+                <input type="text" name="concept" id="concept" placeholder="En que has gastado o cobrado">
+                <input type="number" name="quantity" id="quantity" step="0.01" placeholder="Cuanto has gastado o cobrado">
+                
+                
+                <div class="grid">
+                    <button id="btn_cerrar"  >Cerrar</button>
+                    <button id="btn_guardar"  >Guardar</button>
+    
+                    <button id="btn_borrar" class="inactive" >Borrar</button>
+                    <button id="btn_modificar" class="inactive">Modificar</button>
+                </div>
+               
+                
+            </form>
+           
+
+        </article>
+
+    </section>
+
+    <footer>
+        <div class="container">
+            &copy; 2023- ivanes666@hotmail.es
+        </div>
+    </footer>
+</body>
+</html>
